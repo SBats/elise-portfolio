@@ -1,0 +1,587 @@
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+* {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+}
+
+html {
+    color: #323131;
+    font-size: 14px;
+    line-height: 1.7;
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    background: #787361 url('../img/cycles-bg.jpeg') fixed center no-repeat;
+    background-size: 120%;
+}
+
+h1, h2, h3, h4, h5 {
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 0.3em;
+}
+
+h2 {
+    font-size: 4.6rem;
+    font-weight: 300;
+    line-height: 0.9em;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+h2 em {
+    font-size: 4.3rem;
+    font-weight: 700;
+    font-style: normal;
+}
+
+h3 {
+    line-height: 1em;
+    margin-bottom: 0;
+}
+
+h3 em {
+    font-weight: 300;
+    font-style: normal;
+}
+
+hr {
+    width: 0.5rem;
+    border-width: 0.15rem;
+    display: block;
+    margin: 0.8rem 0;
+    border-color: currentColor;
+}
+
+
+/* HEADER */
+
+header {
+    text-align: center;
+    color: white;
+    margin-top: 4rem;
+    margin-bottom: 17rem;
+}
+
+
+/* MAIN */
+
+main {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+
+/* NAVIGATIONS */
+
+nav {
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    width: 100%;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+
+/* SECTIONS */
+
+section {
+    margin-top: 12rem;
+    margin-bottom: 12rem;
+    position: relative;
+    width: 100%;
+}
+
+section::before, section::after {
+    content: "";
+    width: 0; 
+	height: 0; 
+    position: absolute;
+    left: 0;
+}
+
+section::before {
+    bottom: 100%;
+}
+
+section::after {
+    top: 100%;
+}
+
+/* SKILLS */
+
+#skills {
+    background: #db5848;
+}
+
+#skills::before {
+	border-top: 4.2rem solid transparent;
+	border-bottom: 0 solid transparent; 
+	border-right: 100vw solid #db5848; 
+}
+
+#skills::after {
+	border-top: 0 solid transparent;
+	border-bottom: 4.2rem solid transparent; 
+	border-right: 100vw solid #db5848;  
+}
+
+.skill-cards {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+.skill-cards-item {
+    background: white;
+    position: relative;
+    padding: 1.7rem;
+    text-align: center;
+    flex: 0 0 17.9rem;
+    margin: 0 2rem;
+}
+
+.skill-cards-item ul {
+    padding: 0;
+    list-style: none;
+}
+
+.skill-cards-item hr {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#print, #brand {
+    top: -3.6rem;
+}
+
+
+#web {
+    top: -7rem;
+}
+
+/* WORKS */
+
+#works {
+    background: #eea320;
+    padding: 3.14rem 0;
+}
+
+#works::before {
+	border-top: 4.2rem solid transparent;
+	border-bottom: 0 solid transparent; 
+	border-left: 100vw solid #eea320; 
+}
+
+#works::after {
+	border-top: 0 solid transparent;
+	border-bottom: 4.2rem solid transparent; 
+	border-left: 100vw solid #eea320;  
+}
+
+#works h3 {
+    color: white;
+    text-align: center;   
+    margin-bottom: 2.14rem;
+    letter-spacing: 0.3em;
+}
+
+.works-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+    list-style: none;
+}
+
+.works-grid-item {
+    flex: 1 1 26%;
+    margin: 0.7rem;
+    min-height: 120px;
+    overflow: hidden;
+    background: #787361;
+}
+
+.works-grid-item a {
+    display: block;
+    width: 90%;
+    padding: 2.85rem 1.85rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #323131;
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.works-grid-item-title {
+    font-size: 2.35rem;
+    font-weight: 700;
+    line-height: 1em;
+}
+
+.works-grid-item-company {
+    font-size: 1.7rem;
+    font-weight: 300;
+    line-height: 1em;
+}
+
+.works-grid-item hr {
+    width: 0.7rem;
+    border-width: 0.28rem;
+}
+
+.works-grid-item-more {
+    display: inline-block;
+    padding: 0.57rem 1.28rem;
+    color: #db5848;
+    font-size: 0.8rem;
+    font-weight: 700;
+    border: 2px solid #db5848;
+    border-radius: 2px;
+    transition: background 0.2s ease-out, color 0.2s ease-out 0.2s;
+}
+
+.works-grid-item a:hover .works-grid-item-more {
+    background: #db5848;
+    color: white;
+}
+
+/* INFORMATIONS */
+
+#informations {
+    display: flex;
+    justify-content: center;
+    padding: 3.21rem;
+    margin-bottom: 0;
+    background: #db5848;
+}
+
+#informations::before {
+	border-top: 4.2rem solid transparent;
+	border-bottom: 0 solid transparent; 
+	border-right: 100vw solid #db5848; 
+}
+
+#informations > div {
+    padding: 2.57rem 3rem;
+    margin: 0 2rem;
+    align-self: flex-start;
+}
+
+#informations h3 {
+    font-size: 1.57rem;
+    line-height: 1.3em;
+}
+
+#about {
+    color: white;
+}
+
+#about p {
+    max-width: 24rem;   
+}
+
+#about h5 {
+    margin-bottom: 0;
+    line-height: 1em;
+}
+
+#about h5 + p {
+    margin-top: 0.6rem;   
+}
+
+#about a {
+    color: white;
+    font-weight: 700;
+    text-decoration: none;   
+}
+
+#about address ul {
+    padding: 0;
+    list-style: none;
+}
+
+#about address li {
+    display: inline-block;
+    height: 2.8rem;
+}
+
+#about address li.mail {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+#about address a {
+    display:block;
+    height: 100%;
+    width: 100%;
+    padding: 0.8rem 0.5rem;
+}
+
+#about address img {
+    display:block;
+    max-height: 100%;
+    width: auto;
+}
+
+#experiences {
+    background: white;
+    position: relative;
+    top: -8.6rem;
+}
+
+#experiences h3 {
+    color: #db5848;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 0;
+    margin-right: 5rem;
+}
+
+#experiences .cv {
+    display: inline-block;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1rem 2.2rem;
+    color: #db5848;
+    border: 2px solid #db5848;
+}
+
+#experiences hr {
+    border-color: #db5848;   
+}
+
+#experiences ul {
+    padding: 0;
+    list-style: none;
+}
+
+#experiences li {
+    text-transform: uppercase;   
+}
+
+#experiences .company {
+    font-weight: 700;
+}
+
+#experiences .role {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #db5848;
+}
+
+
+/* FOOTER */
+
+footer {
+    padding: 2rem;
+    text-align: center;
+    background: #db5848;
+    color: white;
+}
+
+
+/* EFFECTS */
+
+.card-shadow {
+    box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.1);
+}
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
