@@ -72,9 +72,11 @@ html {
     font-family: 'Raleway', sans-serif;
 }
 
-body {
+.main-container {
+    padding: 1px;
     background: #787361 url('../img/cycles-bg.jpeg') fixed center no-repeat;
     background-size: 120%;
+    background-position: 0 center;
 }
 
 h1, h2, h3, h4, h5 {
