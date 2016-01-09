@@ -419,6 +419,12 @@ section::after {
     padding: 1rem 2.2rem;
     color: #db5848;
     border: 2px solid #db5848;
+    transition: background 0.2s ease-out, color 0.2s ease-out 0.2s;
+}
+
+#experiences .cv:hover {
+    background: #db5848;
+    color: white;
 }
 
 #experiences hr {
