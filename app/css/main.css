@@ -67,16 +67,28 @@ html, body {
 
 html {
     color: #323131;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.7;
     font-family: 'Raleway', sans-serif;
+}
+
+@media only screen and (min-width: 920px) {
+    html {
+        font-size: 14px;
+    }
 }
 
 .main-container {
     padding: 1px;
     background: #787361 url('../img/cycles-bg.jpeg') fixed center no-repeat;
-    background-size: 120%;
+    background-size: auto 120%;
     background-position: 0 center;
+}
+
+@media only screen and (min-width: 1600px) {
+    .main-container {
+        background-size: 120% auto;
+    }
 }
 
 h1, h2, h3, h4, h5 {
@@ -162,7 +174,6 @@ section {
     margin-top: 12rem;
     margin-bottom: 12rem;
     position: relative;
-    width: 100%;
 }
 
 section::before, section::after {
@@ -200,10 +211,16 @@ section::after {
 }
 
 .skill-cards {
-    display: flex;
-    justify-content: center;
     list-style: none;
     padding: 0;
+}
+
+@media only screen and (min-width: 620px) {
+    .skill-cards {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
 }
 
 .skill-cards-item {
@@ -213,6 +230,7 @@ section::after {
     text-align: center;
     flex: 0 0 17.9rem;
     margin: 0 2rem;
+    z-index: 1;
 }
 
 .skill-cards-item ul {
@@ -225,13 +243,41 @@ section::after {
     margin-right: auto;
 }
 
-#print, #brand {
-    top: -3.6rem;
+@media only screen and (max-width: 619px) {
+    .skill-cards {
+        padding: 1px;        
+    }
+
+    .skill-cards-item {
+        margin: 2rem;   
+    }
 }
 
 
-#web {
-    top: -7rem;
+@media only screen and (min-width: 620px) {
+    #brand {
+        top: 7rem;;
+    }
+    
+    #print {
+        top: 3.6rem;
+    }
+
+    #web {
+        top: -7rem;
+    }
+}
+
+
+@media only screen and (min-width: 920px) {
+    #print, #brand {
+        top: -3.6rem;
+    }
+
+
+    #web {
+        top: -7rem;
+    }
 }
 
 /* WORKS */
@@ -261,19 +307,39 @@ section::after {
 }
 
 .works-grid {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
     padding: 0;
     list-style: none;
 }
 
 .works-grid-item {
-    flex: 1 1 26%;
     margin: 0.7rem;
     min-height: 120px;
     overflow: hidden;
     background: #787361;
+}
+
+@media only screen and (max-width: 619px) {
+}
+
+
+@media only screen and (min-width: 620px) {
+    
+    .works-grid-item {
+        flex: 1 1 40%;
+    }
+    
+    .works-grid {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+
+@media only screen and (min-width: 920px) {
+    .works-grid-item {
+        flex: 1 1 26%;
+    }
 }
 
 .works-grid-item a {
@@ -322,12 +388,25 @@ section::after {
 /* INFORMATIONS */
 
 #informations {
-    display: flex;
-    justify-content: center;
     padding: 3.21rem;
     margin-bottom: 0;
     background: #db5848;
 }
+
+@media only screen and (max-width: 619px) {
+}
+
+
+@media only screen and (min-width: 620px) {
+    #informations {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media only screen and (min-width: 920px) {
+}
+
 
 #informations::before {
 	border-top: 4.2rem solid transparent;
@@ -337,8 +416,14 @@ section::after {
 
 #informations > div {
     padding: 2.57rem 3rem;
-    margin: 0 2rem;
+    margin: 0;
     align-self: flex-start;
+}
+
+@media only screen and (min-width: 920px) {
+    #informations > div {
+        margin: 0 2rem;
+    }
 }
 
 #informations h3 {
@@ -394,14 +479,18 @@ section::after {
     display:block;
     max-height: 100%;
     width: auto;
-    transform:scale(1);
-    opacity: 0.6;
-    transition: opacity 0.2s ease-out;
 }
 
-#about address a:hover img {
-    opacity: 1;
-    animation: bouncyHover 0.4s ease-out forwards;
+@media only screen and (min-width: 920px) {
+    #about address img {
+        transform:scale(1);
+        opacity: 0.6;
+        transition: opacity 0.2s ease-out;
+    }
+    #about address a:hover img {
+        opacity: 1;
+        animation: bouncyHover 0.4s ease-out forwards;
+    }   
 }
 
 @keyframes bouncyHover {
@@ -413,7 +502,12 @@ section::after {
 #experiences {
     background: white;
     position: relative;
-    top: -8.6rem;
+}
+
+@media only screen and (min-width: 620px) {
+    #experiences {
+        top: -8.6rem;
+    }
 }
 
 #experiences h3 {
