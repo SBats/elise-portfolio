@@ -1,0 +1,86 @@
+[
+    {
+        "id": "1",
+        "title": "Dashboard Unitag",
+        "company": "Unitag",
+        "type": "Dashboard",
+        "tags": [
+            "Ergonomie",
+            "Graphisme"
+        ],
+        "description": "Le dashboard d'unitag !",
+        "images": []
+    },
+    {
+        "id": "2",
+        "title": "CDESL",
+        "company": "Muse CC",
+        "type": "Site Internet",
+        "tags": [
+            "Archi. de l'information",
+            "Graphisme"
+        ],
+        "description": "Conception, réalisation et découpage l’ensemble des maquettes qui ont été utiliser pour la mise en ligne du site.",
+        "images": [
+            "img/cdesl/1.jpg",
+            "img/cdesl/2.jpg",
+            "img/cdesl/3.jpg"
+        ]
+    },
+    {
+        "id": "3",
+        "title": "La rampe",
+        "company": "CNOSSOS",
+        "type": "Brochure - 24 pages",
+        "tags": [
+            "Graphisme",
+            "Composition"
+        ],
+        "description": "Refonte complète pour cette année 2011 - 2012. Nouvelles propositions graphique et améliorations nécéssaires afin de donnée une nouvelle dynamique à ce projet.",
+        "images": [
+            "img/rampe/brochure/1.jpg",
+            "img/rampe/brochure/2.jpg",
+            "img/rampe/brochure/3.jpg"
+        ]
+    },
+    {
+        "id": "4",
+        "title": "Les 4 saisons",
+        "company": "CNOSSOS",
+        "type": "Magazine - 96 pages",
+        "tags": [
+            "Responssable de projet",
+            "Réalisation"
+        ],
+        "description": "Magazine bimestriel produit par les éditions Terre vivantes. Une grille flexible pour plus d’adaptation et une meilleur mise en valeur des visuels.",
+        "images": [
+            "img/4saisons/1.jpg",
+            "img/4saisons/2.jpg",
+            "img/4saisons/3.jpg"
+        ]
+    },
+    {
+        "id": "5",
+        "title": "Web app mobile",
+        "company": "Unitag",
+        "type": "Wep app",
+        "tags": [
+            "Graphisme"
+        ],
+        "description": "Réalisation de wep app",
+        "images": []
+    },
+    {
+        "id": "6",
+        "title": "Site web d'Unitag",
+        "company": "Unitag",
+        "type": "Site web",
+        "tags": [
+            "Conception",
+            "Ergonomie",
+            "Graphisme"
+        ],
+        "description": "Le site d'Unitag !",
+        "images": []
+    }
+]
