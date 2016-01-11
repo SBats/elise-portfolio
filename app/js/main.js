@@ -14,6 +14,10 @@
 
 (function () {
     
+    var projects = [];
+    var domProjects = [];
+    var pageContainer, projectViewer, projectsCloseButton;
+    
     function createProjectDom (project) {
         var tempListElement, tempLinkElement, tempDomElement;
 
@@ -23,6 +27,14 @@
         tempLinkElement = document.createElement('a');
         tempLinkElement.href = '#';
         tempLinkElement.title = 'Voir le projet ' + project.title;
+        tempLinkElement.addEventListener('click', function (ev) {
+            ev.preventDefault();
+            showAProject(project);  
+        }, false);
+        tempLinkElement.addEventListener('keydown', function (ev) {
+            ev.preventDefault();
+            showAProject(project);  
+        }, false);
     
         tempDomElement = document.createElement('div');
         tempDomElement.className = 'works-grid-item-title';
@@ -57,6 +69,15 @@
             projectsContainer.appendChild(tempDomElement);
         }
         
+        projectsCloseButton.addEventListener('click', function (ev) {
+            ev.preventDefault();
+            closeProjectViewer();
+        }, false);
+        projectsCloseButton.addEventListener('keydown', function (ev) {
+            ev.preventDefault();
+            closeProjectViewer();
+        }, false);
+        
     }
     
     function getProjects () {
@@ -87,6 +108,38 @@
         xhr.send("");
 
     }
+    
+    function openProjectViewer () {
+        var viewerClassList = projectViewer.classList;
+        var pageContainerClassList = pageContainer.classList;
+        
+        if (!viewerClassList.contains('shown')) {
+            projectViewer.classList.add('shown');
+        }
+
+        if (!pageContainerClassList.contains('no-scroll')) {
+            pageContainerClassList.add('no-scroll');
+        }
+
+    }
+    
+    function closeProjectViewer () {
+        var viewerClassList = projectViewer.classList;
+        var pageContainerClassList = pageContainer.classList;
+        
+        if (viewerClassList.contains('shown')) {
+            projectViewer.classList.remove('shown');
+        }
+        
+        if (pageContainerClassList.contains('no-scroll')) {
+            pageContainerClassList.remove('no-scroll');
+        }
+
+    }
+    
+    function showAProject (project) {
+        openProjectViewer();
+    }
 
     function computeBackgroundOffset (element) {
         var scrollPosition = document.querySelector('body').scrollTop;
@@ -95,6 +148,10 @@
 
     function mainController () {
         var backgroundElement = document.querySelector('.main-container');
+        projectViewer = document.querySelector('#projects-viewer');
+        projectsCloseButton = document.querySelector('#projects-viewer .project-back');
+        pageContainer = document.querySelector('body');
+        
         computeBackgroundOffset(backgroundElement);
         window.addEventListener("scroll", function () {
             computeBackgroundOffset(backgroundElement);
@@ -102,10 +159,7 @@
         
         getProjects();
     }
-    
 
-    var projects = [];
-    var domProjects = [];
     document.addEventListener("DOMContentLoaded", mainController);
     
 })();

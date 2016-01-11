@@ -63,6 +63,11 @@ textarea {
 
 html, body {
     width: 100%;
+    height: 100%;
+}
+
+body.no-scroll {
+    overflow: hidden;
 }
 
 html {
@@ -597,6 +602,57 @@ footer {
     color: white;
 }
 
+
+/* PROJECTS VIEWER */
+
+#projects-viewer {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -100vw;
+    z-index: 1;
+    
+    background: #f4f4f4;
+    
+    transition: left 0.2s ease-out;
+}
+
+#projects-viewer.shown {
+    left: 0;
+}
+
+#projects-viewer > div {
+    flex: 0 0 50%;
+    position: relative;
+}
+
+#projects-viewer .project-informations {
+    background: #db5848;
+    z-index: 1;
+    transform: translate(-30%, 0);
+    transition: transform 0.2s ease-out 0.2s;
+}
+
+#projects-viewer.shown .project-informations {
+    transform: translate(0, 0);
+}
+
+#projects-viewer .project-informations::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 100%;
+    
+    border-bottom: 0 solid transparent;
+    border-top: 100vh solid transparent;
+    border-left: 2.5rem solid #db5848;
+}
+
+#projects-viewer .project-images {
+    z-index: 2;   
+}
 
 /* EFFECTS */
 
