@@ -233,6 +233,15 @@ section::after {
     z-index: 1;
 }
 
+.skill-cards-item h3 {
+    margin-top: 0;   
+}
+
+.skill-cards-item img {
+    max-width: 100%;
+    height: auto;
+}
+
 .skill-cards-item ul {
     padding: 0;
     list-style: none;
