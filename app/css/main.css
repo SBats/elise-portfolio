@@ -473,8 +473,8 @@ section::after {
     height: 2.8rem;
 }
 
-#about address li.mail {
-    background: rgba(255, 255, 255, 0.2);
+#about address .mail {
+    margin-right: 1rem;
 }
 
 #about address a {
@@ -482,6 +482,10 @@ section::after {
     height: 100%;
     width: 100%;
     padding: 0.8rem 0.5rem;
+}
+
+#about address .mail a {
+    padding: 0;
 }
 
 #about address img {
