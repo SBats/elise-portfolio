@@ -109,6 +109,67 @@
 
     }
     
+    function fillViewerWithProject(project, callback) {
+        var tempListElement, tempDomeElement;
+        
+        projectViewer.querySelector('.project-title').innerHTML = project.title;
+        projectViewer.querySelector('.project-company').innerHTML = project.company;
+        projectViewer.querySelector('.project-type').innerHTML = project.type;
+        projectViewer.querySelector('.project-description').innerHTML = project.description;
+        
+        for (var i = 0; i < project.tags.length; i++) {
+            console.log(i);
+            tempListElement = document.createElement('li');
+            tempListElement.innerHTML = project.tags[i];
+            projectViewer.querySelector('.project-tags-list').appendChild(tempListElement);
+        }
+        
+        if (project.link.url != '') {
+            projectViewer.querySelector('.project-link').innerHTML = project.link.title;
+            projectViewer.querySelector('.project-link').href = project.link.url;
+        } else {
+            if (!projectViewer.querySelector('.project-link').classList.contains('hidden')) {
+                projectViewer.querySelector('.project-link').classList.add('hidden');
+            }
+        }
+        
+        projectViewer.querySelector('.project-link').title = project.link.title;
+        
+        for (var j = 0; j < project.images.length; j++) {
+            tempDomeElement = document.createElement('img');
+            tempDomeElement.src = project.images[j];
+            tempDomeElement.alt = project.title + ': Illustration ' + j;
+            
+            tempListElement = document.createElement('li');
+            tempListElement.className = 'card-shadow';
+            tempListElement.appendChild(tempDomeElement);
+            projectViewer.querySelector('.project-images-list').appendChild(tempListElement);
+        }
+        
+        callback();
+    }
+    
+    function emptyViewerWithProject() {
+        projectViewer.querySelector('.project-title').innerHTML = '';
+        projectViewer.querySelector('.project-company').innerHTML = '';
+        projectViewer.querySelector('.project-type').innerHTML = '';
+        projectViewer.querySelector('.project-tags-list').innerHTML = '';
+        projectViewer.querySelector('.project-description').innerHTML = '';
+        projectViewer.querySelector('.project-link').innerHTML = '';
+        projectViewer.querySelector('.project-link').href = '#';
+        projectViewer.querySelector('.project-link').title = '';
+        
+        if (projectViewer.querySelector('.project-link').classList.contains('hidden')) {
+            projectViewer.querySelector('.project-link').classList.remove('hidden');
+        }
+
+        projectViewer.querySelector('.project-images-list').innerHTML = '';
+    }
+    
+    function showAProject(project) {
+        fillViewerWithProject(project,openProjectViewer );
+    }
+    
     function openProjectViewer () {
         var viewerClassList = projectViewer.classList;
         var pageContainerClassList = pageContainer.classList;
@@ -134,11 +195,9 @@
         if (pageContainerClassList.contains('no-scroll')) {
             pageContainerClassList.remove('no-scroll');
         }
+        
+        emptyViewerWithProject();
 
-    }
-    
-    function showAProject (project) {
-        openProjectViewer();
     }
 
     function computeBackgroundOffset (element) {

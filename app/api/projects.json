@@ -9,6 +9,10 @@
             "Graphisme"
         ],
         "description": "Le dashboard d'unitag !",
+        "link": {
+            "title": "",
+            "url": ""
+        },
         "images": []
     },
     {
@@ -21,10 +25,14 @@
             "Graphisme"
         ],
         "description": "Conception, réalisation et découpage l’ensemble des maquettes qui ont été utiliser pour la mise en ligne du site.",
+        "link": {
+            "title": "",
+            "url": ""
+        },
         "images": [
-            "img/cdesl/1.jpg",
-            "img/cdesl/2.jpg",
-            "img/cdesl/3.jpg"
+            "http://elise-jaspard.fr/projects/visuels/projects/cdesl/1.jpg",
+            "http://elise-jaspard.fr/projects/visuels/projects/cdesl/2.jpg",
+            "http://elise-jaspard.fr/projects/visuels/projects/cdesl/3.jpg"
         ]
     },
     {
@@ -37,10 +45,14 @@
             "Composition"
         ],
         "description": "Refonte complète pour cette année 2011 - 2012. Nouvelles propositions graphique et améliorations nécéssaires afin de donnée une nouvelle dynamique à ce projet.",
+        "link": {
+            "title": "",
+            "url": ""
+        },
         "images": [
-            "img/rampe/brochure/1.jpg",
-            "img/rampe/brochure/2.jpg",
-            "img/rampe/brochure/3.jpg"
+            "http://elise-jaspard.fr/projects/visuels/projects/rampe/brochure/1.jpg",
+            "http://elise-jaspard.fr/projects/visuels/projects/rampe/brochure/2.jpg",
+            "http://elise-jaspard.fr/projects/visuels/projects/rampe/brochure/3.jpg"
         ]
     },
     {
@@ -53,10 +65,14 @@
             "Réalisation"
         ],
         "description": "Magazine bimestriel produit par les éditions Terre vivantes. Une grille flexible pour plus d’adaptation et une meilleur mise en valeur des visuels.",
+        "link": {
+            "title": "",
+            "url": ""
+        },
         "images": [
-            "img/4saisons/1.jpg",
-            "img/4saisons/2.jpg",
-            "img/4saisons/3.jpg"
+            "http://elise-jaspard.fr/projects/visuels/projects/4saisons/1.jpg",
+            "http://elise-jaspard.fr/projects/visuels/projects/4saisons/2.jpg",
+            "http://elise-jaspard.fr/projects/visuels/projects/4saisons/3.jpg"
         ]
     },
     {
@@ -68,6 +84,10 @@
             "Graphisme"
         ],
         "description": "Réalisation de wep app",
+        "link": {
+            "title": "",
+            "url": ""
+        },
         "images": []
     },
     {
@@ -81,6 +101,10 @@
             "Graphisme"
         ],
         "description": "Le site d'Unitag !",
+        "link": {
+            "title": "",
+            "url": ""
+        },
         "images": []
     }
 ]
