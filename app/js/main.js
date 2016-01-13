@@ -118,7 +118,6 @@
         projectViewer.querySelector('.project-description').innerHTML = project.description;
         
         for (var i = 0; i < project.tags.length; i++) {
-            console.log(i);
             tempListElement = document.createElement('li');
             tempListElement.innerHTML = project.tags[i];
             projectViewer.querySelector('.project-tags-list').appendChild(tempListElement);
