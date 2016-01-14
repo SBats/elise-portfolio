@@ -413,7 +413,7 @@ section::after {
     transition: background 0.2s ease-out, color 0.2s ease-out 0.2s;
 }
 
-.works-grid-item a:hover .works-grid-item-more {
+.works-grid-item a:hover .works-grid-item-more, .works-grid-item a:focus .works-grid-item-more {
     background: #db5848;
     color: white;
 }
@@ -523,7 +523,7 @@ section::after {
     opacity: 0.6;
     transition: opacity 0.2s ease-out;
 }
-#about address a:hover img {
+#about address a:hover img, #about address a:focus img {
     opacity: 1;
     animation: bouncyHover 0.4s ease-out forwards;
 }
@@ -574,7 +574,7 @@ section::after {
     }
 }
 
-#experiences .cv:hover {
+#experiences .cv:hover, #experiences .cv:focus {
     background: #db5848;
     color: white;
 }
