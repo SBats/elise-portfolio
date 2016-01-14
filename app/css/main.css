@@ -199,8 +199,8 @@ section {
 
 section::before, section::after {
     content: "";
-    width: 0; 
-	height: 0; 
+    width: 0;
+	height: 0;
     position: absolute;
     left: 0;
 }
@@ -221,14 +221,14 @@ section::after {
 
 #skills::before {
 	border-top: 4.2rem solid transparent;
-	border-bottom: 0 solid transparent; 
-	border-right: 100vw solid #db5848; 
+	border-bottom: 0 solid transparent;
+	border-right: 100vw solid #db5848;
 }
 
 #skills::after {
 	border-top: 0 solid transparent;
-	border-bottom: 4.2rem solid transparent; 
-	border-right: 100vw solid #db5848;  
+	border-bottom: 4.2rem solid transparent;
+	border-right: 100vw solid #db5848;
 }
 
 .skill-cards {
@@ -255,7 +255,7 @@ section::after {
 }
 
 .skill-cards-item h3 {
-    margin-top: 0;   
+    margin-top: 0;
 }
 
 .skill-cards-item img {
@@ -275,11 +275,11 @@ section::after {
 
 @media only screen and (max-width: 619px) {
     .skill-cards {
-        padding: 1px;        
+        padding: 1px;
     }
 
     .skill-cards-item {
-        margin: 2rem;   
+        margin: 2rem;
     }
 }
 
@@ -288,7 +288,7 @@ section::after {
     #brand {
         top: 7rem;;
     }
-    
+
     #print {
         top: 3.6rem;
     }
@@ -319,21 +319,21 @@ section::after {
 
 #works::before {
 	border-top: 4.2rem solid transparent;
-	border-bottom: 0 solid transparent; 
-	border-left: 100vw solid #eea320; 
+	border-bottom: 0 solid transparent;
+	border-left: 100vw solid #eea320;
 }
 
 #works::after {
 	border-top: 0 solid transparent;
-	border-bottom: 4.2rem solid transparent; 
-	border-left: 100vw solid #eea320;  
+	border-bottom: 4.2rem solid transparent;
+	border-left: 100vw solid #eea320;
 }
 
 #works h3 {
     color: white;
-    text-align: center;   
+    text-align: center;
     margin-bottom: 2.14rem;
-    letter-spacing: 0.3em;
+    letter-spacing: 0.2em;
 }
 
 .works-grid {
@@ -343,7 +343,7 @@ section::after {
 
 .works-grid-item {
     margin: 0.7rem;
-    min-height: 120px;
+    height: 200px;
     overflow: hidden;
     background: #787361;
 }
@@ -353,11 +353,11 @@ section::after {
 
 
 @media only screen and (min-width: 620px) {
-    
+
     .works-grid-item {
         flex: 1 1 40%;
     }
-    
+
     .works-grid {
         display: flex;
         justify-content: center;
@@ -375,6 +375,7 @@ section::after {
 .works-grid-item a {
     display: block;
     width: 90%;
+    height: 200px;
     padding: 2.85rem 1.85rem;
     text-transform: uppercase;
     text-decoration: none;
@@ -383,20 +384,20 @@ section::after {
 }
 
 .works-grid-item-title {
-    font-size: 2.35rem;
+    font-size: 1.70rem;
     font-weight: 700;
     line-height: 1em;
 }
 
 .works-grid-item-company {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     font-weight: 300;
     line-height: 1em;
 }
 
 .works-grid-item hr {
     width: 0.7rem;
-    border-width: 0.28rem;
+    border-width: 0.20rem;
 }
 
 .works-grid-item-more {
@@ -440,8 +441,8 @@ section::after {
 
 #informations::before {
 	border-top: 4.2rem solid transparent;
-	border-bottom: 0 solid transparent; 
-	border-right: 100vw solid #db5848; 
+	border-bottom: 0 solid transparent;
+	border-right: 100vw solid #db5848;
 }
 
 #informations > div {
@@ -458,7 +459,7 @@ section::after {
 
 #informations h3 {
     font-size: 1.57rem;
-    line-height: 1.3em;
+    line-height: 1.1em;
 }
 
 #about {
@@ -466,7 +467,7 @@ section::after {
 }
 
 #about p {
-    max-width: 24rem;   
+    max-width: 24rem;
 }
 
 #about h5 {
@@ -475,13 +476,13 @@ section::after {
 }
 
 #about h5 + p {
-    margin-top: 0.6rem;   
+    margin-top: 0.6rem;
 }
 
 #about a {
     color: white;
     font-weight: 700;
-    text-decoration: none;   
+    text-decoration: none;
 }
 
 #about address ul {
@@ -515,16 +516,14 @@ section::after {
     width: auto;
 }
 
-@media only screen and (min-width: 920px) {
-    #about address img {
-        transform:scale(1);
-        opacity: 0.6;
-        transition: opacity 0.2s ease-out;
-    }
-    #about address a:hover img {
-        opacity: 1;
-        animation: bouncyHover 0.4s ease-out forwards;
-    }   
+#about address img {
+    transform:scale(1);
+    opacity: 0.6;
+    transition: opacity 0.2s ease-out;
+}
+#about address a:hover img {
+    opacity: 1;
+    animation: bouncyHover 0.4s ease-out forwards;
 }
 
 @keyframes bouncyHover {
@@ -539,8 +538,9 @@ section::after {
 }
 
 @media only screen and (min-width: 620px) {
-    #experiences {
+    #informations #experiences {
         top: -8.6rem;
+        padding-right: 12rem;
     }
 }
 
@@ -564,13 +564,21 @@ section::after {
     transition: background 0.2s ease-out, color 0.2s ease-out 0.2s;
 }
 
+@media only screen and (min-width: 920px) {
+    #experiences .cv {
+        position: absolute;
+        top: 2.57rem;
+        right: 3rem;
+    }
+}
+
 #experiences .cv:hover {
     background: #db5848;
     color: white;
 }
 
 #experiences hr {
-    border-color: #db5848;   
+    border-color: #db5848;
 }
 
 #experiences ul {
@@ -579,7 +587,15 @@ section::after {
 }
 
 #experiences li {
-    text-transform: uppercase;   
+    text-transform: uppercase;
+}
+
+#experiences li:not(:last-child) {
+    margin-bottom: 1.57rem;
+}
+
+#experiences li > div {
+    line-height: 1.3em;
 }
 
 #experiences .company {
@@ -597,6 +613,7 @@ section::after {
 
 footer {
     padding: 2rem;
+    font-size: 0.8rem;
     text-align: center;
     background: #db5848;
     color: white;
@@ -613,9 +630,9 @@ footer {
     top: 0;
     left: -100vw;
     z-index: 1;
-    
+
     background: #f4f4f4;
-    
+
     transition: left 0.3s ease-out 0.2s;
 }
 
@@ -648,7 +665,7 @@ footer {
     position: absolute;
     top: 0;
     left: 100%;
-    
+
     border-bottom: 0 solid transparent;
     border-top: 100vh solid transparent;
     border-left: 2.5rem solid #db5848;
@@ -658,6 +675,11 @@ footer {
     background: none;
     border: none;
     outline: none;
+    padding: 0;
+}
+
+#projects-viewer .project-back:hover, #projects-viewer .project-back:focus {
+    animation: bouncyHover 0.4s ease-out forwards;
 }
 
 #projects-viewer .project-title {
@@ -683,7 +705,7 @@ footer {
 
 #projects-viewer .project-title,
 #projects-viewer .project-tags {
-    font-weight: 700; 
+    font-weight: 700;
 }
 
 #projects-viewer .project-company,
@@ -712,16 +734,24 @@ footer {
 }
 
 #projects-viewer .project-link {
+    display: inline-block;
+    text-decoration: none;
     margin-top: 1.8rem;
+    padding: 0.7rem 1.85rem;
     color: white;
     font-size: 0.8rem;
     font-weight: 700;
     text-transform: uppercase;
     border: 2px solid white;
     border-radius: 2px;
+
+    transition: background 0.2s ease-out, color 0.2s ease-out 0.2s;
 }
 
-
+#projects-viewer .project-link:hover, #projects-viewer .project-link:focus {
+    background: white;
+    color: #db5848;
+}
 
 #projects-viewer .project-images {
     flex: 0 0 63%;
@@ -734,14 +764,27 @@ footer {
     overflow-x: hidden;
     width: 63vw;
     padding: 5.8rem 0;
+    padding-right: 20vw;
     height: 100vh;
     margin: 0;
 }
 
+@media only screen and (max-width: 1600px) {
+    #projects-viewer .project-images-list {
+        padding-right: 16vw;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    #projects-viewer .project-images-list {
+        padding-right: 14vw;
+    }
+}
+
 #projects-viewer .project-images-list li {
-    padding: 2rem;
+    padding: 1rem;
     background: white;
-    border-radius: 5px;
+    border-radius: 3px;
     position: relative;
 }
 

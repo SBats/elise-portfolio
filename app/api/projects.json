@@ -1,19 +1,23 @@
 [
     {
         "id": "1",
-        "title": "Dashboard Unitag",
+        "title": "Dashboard",
         "company": "Unitag",
-        "type": "Dashboard",
+        "type": "Interface de gestion",
         "tags": [
             "Ergonomie",
             "Graphisme"
         ],
-        "description": "Le dashboard d'unitag !",
+        "description": "Challenge de cette année 2015, la refont du board pour la platforme d'Unitag. L'objectif était de proposer une nouvelle interface : plus engageante et plus accéssible. Permettre la découverte ou l'accès des diffèrentes technologies à l'utilisateur tout en prenant en compte l'aspect specifique de chacune d elles.   ",
         "link": {
             "title": "",
             "url": ""
         },
-        "images": []
+        "images": [
+            "http://elise-jaspard.fr/api/images/board-unitag-1.jpg",
+            "http://elise-jaspard.fr/api/images/board-unitag-2.jpg",
+            "http://elise-jaspard.fr/api/images/board-unitag-3.jpg"
+        ]
     },
     {
         "id": "2",
@@ -24,10 +28,10 @@
             "Archi. de l'information",
             "Graphisme"
         ],
-        "description": "Conception, réalisation et découpage l’ensemble des maquettes qui ont été utiliser pour la mise en ligne du site.",
+        "description": "Conception, réalisation et découpage l’ensemble des maquettes qui ont été utiliser pour la mise en ligne du site. Conception, réalisation et découpage l’ensemble des maquettes qui ont été utiliser pour la mise en ligne du site. Conception, réalisation et découpage l’ensemble des maquettes qui ont été utiliser pour la mise en ligne du site.",
         "link": {
-            "title": "",
-            "url": ""
+            "title": "Test Link",
+            "url": "#"
         },
         "images": [
             "http://elise-jaspard.fr/projects/visuels/projects/cdesl/1.jpg",
@@ -37,14 +41,13 @@
     },
     {
         "id": "3",
-        "title": "La rampe",
+        "title": "La Rampe",
         "company": "CNOSSOS",
-        "type": "Brochure - 24 pages",
+        "type": "Brochure de 24 pages",
         "tags": [
-            "Graphisme",
-            "Composition"
+            "Composition - Graphisme"
         ],
-        "description": "Refonte complète pour cette année 2011 - 2012. Nouvelles propositions graphique et améliorations nécéssaires afin de donnée une nouvelle dynamique à ce projet.",
+        "description": "La Rampe est une salle de spectacle qui a souhaité une refonte complète de sa brochure de saisons. À l'aide de nouvelles propositions graphique, j'ai essayé d'apporter une nouvelle dynamique à ce support.",
         "link": {
             "title": "",
             "url": ""
@@ -59,12 +62,11 @@
         "id": "4",
         "title": "Les 4 saisons",
         "company": "CNOSSOS",
-        "type": "Magazine - 96 pages",
+        "type": "Magazine de 96 pages",
         "tags": [
-            "Responssable de projet",
-            "Réalisation"
+            "Direction de projet - Réalisation"
         ],
-        "description": "Magazine bimestriel produit par les éditions Terre vivantes. Une grille flexible pour plus d’adaptation et une meilleur mise en valeur des visuels.",
+        "description": "Les 4 saisons est un magazine bimestriel produit par les éditions Terre vivantes. Il a été conçu à partir d'une grille flexible pour plus d’adaptation et une meilleur mise en valeur des visuels. Tirage : 50 000 ex.",
         "link": {
             "title": "",
             "url": ""
@@ -77,13 +79,13 @@
     },
     {
         "id": "5",
-        "title": "Web app mobile",
+        "title": "Web Apps",
         "company": "Unitag",
-        "type": "Wep app",
+        "type": "Plateforme et outils marketing",
         "tags": [
-            "Graphisme"
+            "Concept - Ergonomie - Graphisme"
         ],
-        "description": "Réalisation de wep app",
+        "description": "Les Wep Apps correspondent à de mini site mobile, packager, qui ont pour but de réponde rapidement à diffèrents usages. Carte de visite | Jeux à gratter | Sondage | Téléchargement… J'ai conçu et designer une interface de gestion qui accompagne l'utilisateur lors de la création, ainsi que les diffèrents rendu sur smartphone en utilisant le principe de blocs générique.",
         "link": {
             "title": "",
             "url": ""
@@ -92,19 +94,22 @@
     },
     {
         "id": "6",
-        "title": "Site web d'Unitag",
+        "title": "Website",
         "company": "Unitag",
-        "type": "Site web",
+        "type": "Refonte de l'identité graphique",
         "tags": [
             "Conception",
-            "Ergonomie",
             "Graphisme"
         ],
-        "description": "Le site d'Unitag !",
+        "description": "Avec pour objectif de rafraichir l'image globale de la marque, j'ai eu l'occasion d'effectuer une refonte complète du site. Dans la continuité, de nouvelles pages plus pédagogique on vue le jour, notament pour accompagner l'arriver de nouvelle technologies tel que le NFC.",
         "link": {
-            "title": "",
-            "url": ""
+            "title": "Visiter le site",
+            "url": "#"
         },
-        "images": []
+        "images": [
+            "http://elise-jaspard.fr/api/images/site-unitag-1.jpg",
+            "http://elise-jaspard.fr/api/images/site-unitag-2.jpg",
+            "http://elise-jaspard.fr/api/images/site-unitag-3.jpg"
+        ]
     }
 ]
