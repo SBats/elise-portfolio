@@ -249,7 +249,7 @@ section::after {
     position: relative;
     padding: 1.7rem;
     text-align: center;
-    flex: 0 0 17.9rem;
+    flex: 0 0 19rem;
     margin: 0 2rem;
     z-index: 1;
 }
@@ -261,6 +261,8 @@ section::after {
 .skill-cards-item img {
     max-width: 100%;
     height: auto;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
 }
 
 .skill-cards-item ul {
