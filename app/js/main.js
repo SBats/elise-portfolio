@@ -30,11 +30,15 @@
         tempLinkElement.addEventListener('click', function (ev) {
             ev.preventDefault();
             showAProject(project);  
-        }, false);
+        }, true);
         tempLinkElement.addEventListener('keydown', function (ev) {
-            ev.preventDefault();
-            showAProject(project);  
-        }, false);
+            var pressedKey = ev.key || ev.keyCode || event.which;
+
+            if (pressedKey == 13) {
+                ev.preventDefault();
+                showAProject(project);      
+            }
+        }, true);
     
         tempDomElement = document.createElement('div');
         tempDomElement.className = 'works-grid-item-title';
@@ -74,8 +78,12 @@
             closeProjectViewer();
         }, false);
         projectsCloseButton.addEventListener('keydown', function (ev) {
-            ev.preventDefault();
-            closeProjectViewer();
+            var pressedKey = ev.key || ev.keyCode || event.which;
+
+            if (pressedKey == 13) {
+                ev.preventDefault();
+                closeProjectViewer();    
+            }
         }, false);
         
     }
@@ -111,6 +119,7 @@
     
     function fillViewerWithProject(project, callback) {
         var tempListElement, tempDomeElement;
+        emptyViewerWithProject();
         
         projectViewer.querySelector('.project-title').innerHTML = project.title;
         projectViewer.querySelector('.project-company').innerHTML = project.company;
@@ -166,7 +175,8 @@
     }
     
     function showAProject(project) {
-        fillViewerWithProject(project,openProjectViewer );
+        projectsCloseButton.focus();
+        fillViewerWithProject(project, openProjectViewer);
     }
     
     function openProjectViewer () {
