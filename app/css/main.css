@@ -86,13 +86,13 @@ html {
 .main-container {
     padding: 1px;
     background: #787361 url('../img/cycles-bg-v2.jpg') fixed center no-repeat;
-    background-size: auto 120%;
+    background-size: cover;
     background-position: 0 center;
 }
 
 @media only screen and (min-width: 1600px) {
     .main-container {
-        background-size: 120% auto;
+        background-size: cover;
     }
 }
 
