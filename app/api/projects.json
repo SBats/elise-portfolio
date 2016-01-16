@@ -8,11 +8,12 @@
             "Ergonomie",
             "Graphisme"
         ],
-        "description": "Challenge de cette année 2015, la refont du board pour la platforme d'Unitag. L'objectif était de proposer une nouvelle interface : plus engageante et plus accéssible. Permettre la découverte ou l'accès des diffèrentes technologies à l'utilisateur tout en prenant en compte l'aspect specifique de chacune d elles.   ",
+        "description": "Challenge de cette année 2015, la refont du board pour la platforme d'Unitag. L'objectif était de proposer une nouvelle interface : plus engageante et plus accéssible. Permettre la découverte ou l'accès des diffèrentes technologies à l'utilisateur tout en prenant en compte l'aspect specifique de chacune d elles.",
         "link": {
             "title": "",
             "url": ""
         },
+        "thumbnail": "http://elise-jaspard.fr/api/images/thumbnails/unitag-board.jpg",
         "images": [
             "http://elise-jaspard.fr/api/images/board-unitag-1.jpg",
             "http://elise-jaspard.fr/api/images/board-unitag-2.jpg",
@@ -33,6 +34,7 @@
             "title": "Test Link",
             "url": "#"
         },
+        "thumbnail": "http://elise-jaspard.fr/api/images/thumbnails/cdesl.jpg",
         "images": [
             "http://elise-jaspard.fr/projects/visuels/projects/cdesl/1.jpg",
             "http://elise-jaspard.fr/projects/visuels/projects/cdesl/2.jpg",
@@ -52,6 +54,7 @@
             "title": "",
             "url": ""
         },
+        "thumbnail": "http://elise-jaspard.fr/api/images/thumbnails/la-rampe1.jpg",
         "images": [
             "http://elise-jaspard.fr/projects/visuels/projects/rampe/brochure/1.jpg",
             "http://elise-jaspard.fr/projects/visuels/projects/rampe/brochure/2.jpg",
@@ -71,6 +74,7 @@
             "title": "",
             "url": ""
         },
+        "thumbnail": "http://elise-jaspard.fr/api/images/thumbnails/4saisons.jpg",
         "images": [
             "http://elise-jaspard.fr/projects/visuels/projects/4saisons/1.jpg",
             "http://elise-jaspard.fr/projects/visuels/projects/4saisons/2.jpg",
@@ -85,12 +89,17 @@
         "tags": [
             "Concept - Ergonomie - Graphisme"
         ],
-        "description": "Les Wep Apps correspondent à de mini site mobile, packager, qui ont pour but de réponde rapidement à diffèrents usages. Carte de visite | Jeux à gratter | Sondage | Téléchargement… J'ai conçu et designer une interface de gestion qui accompagne l'utilisateur lors de la création, ainsi que les diffèrents rendu sur smartphone en utilisant le principe de blocs générique.",
+        "description": "Les Wep Apps correspondent à de mini site mobile, packager, qui ont pour but de réponde rapidement à diffèrents usages. Carte de visite - Jeux à gratter - Sondage - Téléchargement… J'ai conçu et designer une interface de gestion qui accompagne l'utilisateur lors de la création, ainsi que les diffèrents rendu sur smartphone en utilisant le principe de blocs générique.",
         "link": {
             "title": "",
             "url": ""
         },
-        "images": []
+        "thumbnail": "http://elise-jaspard.fr/api/images/thumbnails/unitag-mobile.jpg",
+        "images": [
+          "http://elise-jaspard.fr/api/images/webapps-unitag-1.jpg",
+          "http://elise-jaspard.fr/api/images/webapps-unitag-2.jpg",
+          "http://elise-jaspard.fr/api/images/webapps-unitag-3.jpg"
+        ]
     },
     {
         "id": "6",
@@ -106,6 +115,7 @@
             "title": "Visiter le site",
             "url": "#"
         },
+        "thumbnail": "http://elise-jaspard.fr/api/images/thumbnails/unitag-website.jpg",
         "images": [
             "http://elise-jaspard.fr/api/images/site-unitag-1.jpg",
             "http://elise-jaspard.fr/api/images/site-unitag-2.jpg",

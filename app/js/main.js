@@ -24,6 +24,12 @@
         tempListElement = document.createElement('li');
         tempListElement.className = 'works-grid-item';
         
+        tempDomElement = document.createElement('img');
+        tempDomElement.className = 'works-grid-item-thumbnail';
+        tempDomElement.src = project.thumbnail;
+        tempDomElement.alt = project.title;
+        tempListElement.appendChild(tempDomElement);
+        
         tempLinkElement = document.createElement('a');
         tempLinkElement.href = '#';
         tempLinkElement.title = 'Voir le projet ' + project.title;

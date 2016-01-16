@@ -344,10 +344,10 @@ section::after {
 }
 
 .works-grid-item {
-    margin: 0.7rem;
     height: 200px;
     overflow: hidden;
     background: #787361;
+    position: relative;
 }
 
 @media only screen and (max-width: 619px) {
@@ -357,7 +357,7 @@ section::after {
 @media only screen and (min-width: 620px) {
 
     .works-grid-item {
-        flex: 1 1 40%;
+        flex: 1 1 50%;
     }
 
     .works-grid {
@@ -370,19 +370,37 @@ section::after {
 
 @media only screen and (min-width: 920px) {
     .works-grid-item {
-        flex: 1 1 26%;
+        flex: 1 1 33%;
     }
+}
+
+.works-grid-item-thumbnail {
+    position: absolute;
+    top: 0;
+    height: 200px;
+    left: 50%;
+    margin-left: -300px;
 }
 
 .works-grid-item a {
     display: block;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    opacity: 0;
     width: 90%;
     height: 200px;
     padding: 2.85rem 1.85rem;
     text-transform: uppercase;
     text-decoration: none;
-    color: #323131;
-    background: rgba(255, 255, 255, 0.9);
+    color: white;
+    background: rgba(219, 88, 72, 0.9);
+    transition: left 0.2s ease-out, opacity 0.2s ease-out;
+}
+
+.works-grid-item:hover a, .works-grid-item a:focus {
+    left: 0;
+    opacity: 1;
 }
 
 .works-grid-item-title {
@@ -405,17 +423,17 @@ section::after {
 .works-grid-item-more {
     display: inline-block;
     padding: 0.57rem 1.28rem;
-    color: #db5848;
+    color: white;
     font-size: 0.8rem;
     font-weight: 700;
-    border: 2px solid #db5848;
+    border: 2px solid white;
     border-radius: 2px;
     transition: background 0.2s ease-out, color 0.2s ease-out 0.2s;
 }
 
 .works-grid-item a:hover .works-grid-item-more, .works-grid-item a:focus .works-grid-item-more {
-    background: #db5848;
-    color: white;
+    background: white;
+    color: #db5848;
 }
 
 /* INFORMATIONS */
