@@ -181,13 +181,21 @@ nav {
     color: white;
     text-align: center;
     text-transform: uppercase;
+    font-size: 1.2rem;
     font-weight: 700;
+    letter-spacing: 0.3em;
     width: 100%;
 }
 
 nav a {
     color: white;
     text-decoration: none;
+}
+
+nav em {
+    font-weight: 300;
+    font-size: 2.5rem;
+    font-style: normal;
 }
 
 #skills + nav::after {
