@@ -1,17 +1,5 @@
 'use strict';
 
-/*
-<li class="works-grid-item">
-    <a href="#" title="Voir le projet Dashboard Unitag">
-        <div class="works-grid-item-title">Dashboard Unitag</div>
-        <div class="works-grid-item-company">Unitag</div>
-        <hr>
-        <div class="works-grid-item-more">Voir plus</div>
-    </a>
-</li>
-*/
-
-
 (function () {
     
     var projects = [];
@@ -45,15 +33,15 @@
                 showAProject(project);      
             }
         }, true);
+        
+        tempDomElement = document.createElement('div');
+        tempDomElement.className = 'works-grid-item-type';
+        tempDomElement.innerHTML = project.type;
+        tempLinkElement.appendChild(tempDomElement);
     
         tempDomElement = document.createElement('div');
         tempDomElement.className = 'works-grid-item-title';
         tempDomElement.innerHTML = project.title;
-        tempLinkElement.appendChild(tempDomElement);
-        
-        tempDomElement = document.createElement('div');
-        tempDomElement.className = 'works-grid-item-company';
-        tempDomElement.innerHTML = project.company;
         tempLinkElement.appendChild(tempDomElement);
         
         tempDomElement = document.createElement('hr');
