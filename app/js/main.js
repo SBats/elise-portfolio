@@ -4,7 +4,7 @@
     
     var projects = [];
     var domProjects = [];
-    var pageContainer, projectViewer, projectsCloseButton;
+    var pageContainer, projectViewer, projectsCloseButton, backgroundElement;
     
     function createProjectDom (project) {
         var tempListElement, tempLinkElement, tempDomElement;
@@ -14,7 +14,8 @@
         
         tempDomElement = document.createElement('img');
         tempDomElement.className = 'works-grid-item-thumbnail';
-        tempDomElement.src = project.thumbnail;
+        tempDomElement.src = project.thumbnail.normal;
+        tempDomElement.srcset = project.thumbnail.normal + " 1x, " + project.thumbnail.retina + " 2x";
         tempDomElement.alt = project.title;
         tempListElement.appendChild(tempDomElement);
         
@@ -35,8 +36,8 @@
         }, true);
         
         tempDomElement = document.createElement('div');
-        tempDomElement.className = 'works-grid-item-type';
-        tempDomElement.innerHTML = project.type;
+        tempDomElement.className = 'works-grid-item-category';
+        tempDomElement.innerHTML = project.category;
         tempLinkElement.appendChild(tempDomElement);
     
         tempDomElement = document.createElement('div');
@@ -203,21 +204,27 @@
 
     }
 
-    function computeBackgroundOffset (element) {
-        var scrollPosition = document.querySelector('body').scrollTop;
+    function computeBackgroundOffset (scrollPosition, element) {
         element.style.backgroundPositionY = '-' + scrollPosition / 40 + 'px';
     }
 
+    function updateProjectViwerTopOffset (scrollPosition, element) {
+        element.style.top = scrollPosition + 'px';
+    }
+    
+    function scrollEvent() {
+        var scrollPosition = document.querySelector('body').scrollTop;
+        computeBackgroundOffset(scrollPosition, backgroundElement);
+        // updateProjectViwerTopOffset(scrollPosition, projectViewer);
+    }
+
     function mainController () {
-        var backgroundElement = document.querySelector('.main-container');
+        backgroundElement = document.querySelector('.main-container');
         projectViewer = document.querySelector('#projects-viewer');
         projectsCloseButton = document.querySelector('#projects-viewer .project-back');
         pageContainer = document.querySelector('body');
-        
-        computeBackgroundOffset(backgroundElement);
-        window.addEventListener("scroll", function () {
-            computeBackgroundOffset(backgroundElement);
-        });
+
+        window.addEventListener("scroll", scrollEvent);
         
         getProjects();
     }

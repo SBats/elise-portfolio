@@ -57,7 +57,6 @@ textarea {
    ========================================================================== */
 
 * {
-    -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -68,6 +67,8 @@ html, body {
 
 body.no-scroll {
     overflow: hidden;
+    position: relative;
+    -webkit-overflow-scrolling: touch;
 }
 
 html {
@@ -181,10 +182,11 @@ nav {
     color: white;
     text-align: center;
     text-transform: uppercase;
-    font-size: 1.2rem;
+    font-size: 1.0rem;
     font-weight: 700;
     letter-spacing: 0.3em;
     width: 100%;
+    line-height: 1.4;
 }
 
 nav a {
@@ -196,6 +198,7 @@ nav em {
     font-weight: 300;
     font-size: 2.5rem;
     font-style: normal;
+    letter-spacing: 0em;
 }
 
 #skills + nav::after {
@@ -269,9 +272,17 @@ section::after {
 
 @media only screen and (min-width: 620px) {
     .skill-cards {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
     }
 }
 
@@ -280,7 +291,10 @@ section::after {
     position: relative;
     padding: 1.7rem;
     text-align: center;
-    flex: 0 0 19rem;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 19rem;
+        -ms-flex: 0 0 19rem;
+            flex: 0 0 19rem;
     margin: 0 2rem;
     z-index: 1;
 }
@@ -388,20 +402,34 @@ section::after {
 @media only screen and (min-width: 620px) {
 
     .works-grid-item {
-        flex: 1 1 50%;
+        -webkit-box-flex: 1;
+        -webkit-flex: 1 1 50%;
+            -ms-flex: 1 1 50%;
+                flex: 1 1 50%;
     }
 
     .works-grid {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
     }
 }
 
 
 @media only screen and (min-width: 920px) {
     .works-grid-item {
-        flex: 1 1 33%;
+        -webkit-box-flex: 1;
+        -webkit-flex: 1 1 33%;
+            -ms-flex: 1 1 33%;
+                flex: 1 1 33%;
     }
 }
 
@@ -410,7 +438,7 @@ section::after {
     top: 0;
     height: 200px;
     left: 50%;
-    margin-left: -300px;
+    margin-left: -350px;
 }
 
 .works-grid-item a {
@@ -426,7 +454,8 @@ section::after {
     text-decoration: none;
     color: white;
     background: #db5848;
-    transition: left 0.3s ease-out, opacity 0.3s ease-out 0.1s;
+    -webkit-transition: left 0.3s ease-out, opacity 0.3s ease-out 0.1s;
+            transition: left 0.3s ease-out, opacity 0.3s ease-out 0.1s;
 }
 
 .works-grid-item:hover a, .works-grid-item a:focus {
@@ -434,7 +463,7 @@ section::after {
     opacity: 1;
 }
 
-.works-grid-item-type {
+.works-grid-item-category {
     font-size: 1rem;
     font-weight: 300;
     line-height: 1.1em;
@@ -449,6 +478,8 @@ section::after {
 .works-grid-item hr {
     width: 0.7rem;
     border-width: 0.20rem;
+    color: white;
+    text-align: left;
 }
 
 .works-grid-item-more {
@@ -459,7 +490,8 @@ section::after {
     font-weight: 700;
     border: 2px solid white;
     border-radius: 2px;
-    transition: background 0.2s ease-out, color 0.2s ease-out 0.2s;
+    -webkit-transition: background 0.2s ease-out, color 0.2s ease-out 0.2s;
+            transition: background 0.2s ease-out, color 0.2s ease-out 0.2s;
 }
 
 .works-grid-item a:hover .works-grid-item-more, .works-grid-item a:focus .works-grid-item-more {
@@ -481,8 +513,14 @@ section::after {
 
 @media only screen and (min-width: 620px) {
     #informations {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: center;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
 }
 
@@ -499,7 +537,9 @@ section::after {
 #informations > div {
     padding: 2.57rem 3rem;
     margin: 0;
-    align-self: flex-start;
+    -webkit-align-self: flex-start;
+        -ms-flex-item-align: start;
+            align-self: flex-start;
 }
 
 @media only screen and (min-width: 920px) {
@@ -513,7 +553,15 @@ section::after {
     line-height: 1.1em;
 }
 
+#informations hr {
+    text-align: left;
+}
+
 #about {
+    color: white;
+}
+
+#about hr {
     color: white;
 }
 
@@ -563,24 +611,34 @@ section::after {
 
 #about address img {
     display:block;
-    max-height: 100%;
+    height: 100%;
     width: auto;
 }
 
 #about address img {
-    transform:scale(1);
+    -webkit-transform:scale(1);
+        -ms-transform:scale(1);
+            transform:scale(1);
     opacity: 0.6;
-    transition: opacity 0.2s ease-out;
+    -webkit-transition: opacity 0.2s ease-out;
+            transition: opacity 0.2s ease-out;
 }
 #about address a:hover img, #about address a:focus img {
     opacity: 1;
-    animation: bouncyHover 0.4s ease-out forwards;
+    -webkit-animation: bouncyHover 0.4s ease-out forwards;
+            animation: bouncyHover 0.4s ease-out forwards;
+}
+
+@-webkit-keyframes bouncyHover {
+     from { -webkit-transform:scale(1); transform:scale(1); }
+     55%  { -webkit-transform:scale(1.3); transform:scale(1.3); }
+     to   { -webkit-transform:scale(1.2); transform:scale(1.2); }
 }
 
 @keyframes bouncyHover {
-     from { transform:scale(1); }
-     55%  { transform:scale(1.3); }
-     to   { transform:scale(1.2); }
+     from { -webkit-transform:scale(1); transform:scale(1); }
+     55%  { -webkit-transform:scale(1.3); transform:scale(1.3); }
+     to   { -webkit-transform:scale(1.2); transform:scale(1.2); }
 }
 
 #experiences {
@@ -600,7 +658,7 @@ section::after {
     display: inline-block;
     vertical-align: middle;
     margin-top: 0;
-    margin-right: 5rem;
+    margin-right: 6rem;
 }
 
 #experiences .cv {
@@ -612,7 +670,8 @@ section::after {
     padding: 1rem 2.2rem;
     color: #db5848;
     border: 2px solid #db5848;
-    transition: background 0.2s ease-out, color 0.2s ease-out 0.2s;
+    -webkit-transition: background 0.2s ease-out, color 0.2s ease-out 0.2s;
+            transition: background 0.2s ease-out, color 0.2s ease-out 0.2s;
 }
 
 @media only screen and (min-width: 920px) {
@@ -674,22 +733,35 @@ footer {
 /* PROJECTS VIEWER */
 
 #projects-viewer {
-    display: flex;
-    width: 100vw;
     height: 100vh;
+    width: 100vw;
     position: fixed;
+    overflow-x: hidden;
     top: 0;
     left: -100vw;
     z-index: 1;
 
     background: #f4f4f4;
 
-    transition: left 0.3s ease-out 0.2s;
+    -webkit-transition: left 0.3s ease-out 0.2s;
+
+            transition: left 0.3s ease-out 0.2s;
+}
+
+@media only screen and (min-width: 920px) {
+    #projects-viewer {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        overflow-y: hidden;
+    }
 }
 
 #projects-viewer.shown {
     left: 0;
-    transition: left 0.3s ease-out;
+    -webkit-transition: left 0.3s ease-out;
+            transition: left 0.3s ease-out;
 }
 
 #projects-viewer > div {
@@ -697,29 +769,45 @@ footer {
 }
 
 #projects-viewer .project-informations {
-    flex: 0 0 40%;
-    padding: 3.5rem 6rem;
+    padding: 3.5rem 3rem;
     background: #db5848;
     color: white;
     z-index: 1;
-    transform: translate(-30%, 0);
-    transition: transform 0.2s ease-out;
 }
 
-#projects-viewer.shown .project-informations {
-    transform: translate(0, 0);
-    transition: transform 0.2s ease-out 0.3s;
-}
+@media only screen and (min-width: 920px) {
+    #projects-viewer .project-informations {
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 0 40%;
+            -ms-flex: 0 0 40%;
+                flex: 0 0 40%;
+        padding-left: 6rem;
+        padding-right: 6rem;
+        -webkit-transform: translate(-30%, 0);
+        -ms-transform: translate(-30%, 0);
+            transform: translate(-30%, 0);
+    -webkit-transition: -webkit-transform 0.2s ease-out;
+            transition: transform 0.2s ease-out;
+    }
 
-#projects-viewer .project-informations::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 100%;
+    #projects-viewer.shown .project-informations {
+        -webkit-transform: translate(0, 0);
+            -ms-transform: translate(0, 0);
+                transform: translate(0, 0);
+        -webkit-transition: -webkit-transform 0.2s ease-out 0.3s;
+                transition: transform 0.2s ease-out 0.3s;
+    }
 
-    border-bottom: 0 solid transparent;
-    border-top: 100vh solid transparent;
-    border-left: 2.5rem solid #db5848;
+    #projects-viewer .project-informations::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 100%;
+
+        border-bottom: 0 solid transparent;
+        border-top: 100vh solid transparent;
+        border-left: 2.5rem solid #db5848;
+    }
 }
 
 #projects-viewer .project-back {
@@ -729,8 +817,15 @@ footer {
     padding: 0;
 }
 
-#projects-viewer .project-back:hover, #projects-viewer .project-back:focus {
-    animation: bouncyHover 0.4s ease-out forwards;
+#projects-viewer .project-back:focus {
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+}
+
+#projects-viewer .project-back:hover {
+    -webkit-animation: bouncyHover 0.4s ease-out forwards;
+            animation: bouncyHover 0.4s ease-out forwards;
 }
 
 #projects-viewer .project-title {
@@ -752,6 +847,8 @@ footer {
 
 #projects-viewer hr {
     border-width: 0.2.5rem;
+    text-align: left;
+    color: white;
 }
 
 #projects-viewer .project-title,
@@ -781,7 +878,12 @@ footer {
 
 #projects-viewer .project-description {
     margin-top: 2.5rem;
-    max-width: 25.5rem;
+}
+
+@media only screen and (min-width: 920px) {
+    #projects-viewer .project-description {
+        max-width: 25.5rem;
+    }
 }
 
 #projects-viewer .project-link {
@@ -796,7 +898,9 @@ footer {
     border: 2px solid white;
     border-radius: 2px;
 
-    transition: background 0.2s ease-out, color 0.2s ease-out 0.2s;
+    -webkit-transition: background 0.2s ease-out, color 0.2s ease-out 0.2s;
+
+            transition: background 0.2s ease-out, color 0.2s ease-out 0.2s;
 }
 
 #projects-viewer .project-link:hover, #projects-viewer .project-link:focus {
@@ -805,28 +909,45 @@ footer {
 }
 
 #projects-viewer .project-images {
-    flex: 0 0 63%;
-    margin-left: -3vw;
+    overflow-x: hidden;
     z-index: 2;
 }
 
-#projects-viewer .project-images-list {
-    overflow-y: auto;
-    overflow-x: hidden;
-    width: 63vw;
-    padding: 5.8rem 0;
-    padding-right: 20vw;
-    height: 100vh;
-    margin: 0;
+@media only screen and (min-width: 920px) {
+    #projects-viewer .project-images {
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 0 63%;
+            -ms-flex: 0 0 63%;
+                flex: 0 0 63%;
+        margin-left: -3vw;
+    }
 }
 
-@media only screen and (max-width: 1600px) {
+#projects-viewer .project-images-list {
+    overflow-x: hidden;
+    width: 100vw;
+    padding: 5.8rem 3rem;
+    margin: 0;
+    list-style: none;
+}
+
+@media only screen and (min-width: 920px) {
+    #projects-viewer .project-images-list {
+        overflow-y: auto;
+        padding-left: 0;
+        padding-right: 20vw;
+        height: 100vh;
+        width: 63vw;
+    }
+}
+
+@media only screen and (min-width: 920px) and (max-width: 1600px) {
     #projects-viewer .project-images-list {
         padding-right: 16vw;
     }
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (min-width: 920px) and (max-width: 1200px) {
     #projects-viewer .project-images-list {
         padding-right: 14vw;
     }
@@ -874,7 +995,6 @@ footer {
 }
 
 @media print,
-       (-o-min-device-pixel-ratio: 5/4),
        (-webkit-min-device-pixel-ratio: 1.25),
        (min-resolution: 120dpi) {
 

@@ -1,19 +1,23 @@
 [
     {
         "id": "1",
-        "title": "Dashboard",
+        "title": "Dashboard Unitag",
+        "category": "Webdesign",
         "company": "Unitag",
         "type": "Interface de gestion",
         "tags": [
             "Ergonomie",
             "Graphisme"
         ],
-        "description": "Challenge de cette année 2015, la refont du board pour la platforme d'Unitag. L'objectif était de proposer une nouvelle interface : plus engageante et plus accéssible. Permettre la découverte ou l'accès des diffèrentes technologies à l'utilisateur tout en prenant en compte l'aspect specifique de chacune d elles.",
+        "description": "Challenge de cette année 2015, la refonte du board pour la plateforme d'Unitag. L'objectif était de proposer une nouvelle interface : plus engageante et plus accessible. Permettre la découverte ou l'accès des différentes technologies à l'utilisateur, tout en prenant en compte l'aspect spécifique de chacune d'elles.",
         "link": {
             "title": "",
             "url": ""
         },
-        "thumbnail": "http://elise-jaspard.fr/api/images/thumbnails/unitag-board.jpg",
+        "thumbnail": {
+            "normal": "http://elise-jaspard.fr/api/images/thumbnails/board-unitag.jpg",
+            "retina": "http://elise-jaspard.fr/api/images/thumbnails/board-unitag@2x.jpg"
+        },
         "images": [
             "http://elise-jaspard.fr/api/images/board-unitag-1.jpg",
             "http://elise-jaspard.fr/api/images/board-unitag-2.jpg",
@@ -23,6 +27,7 @@
     {
         "id": "2",
         "title": "CDESL",
+        "category": "Webdesign",
         "company": "Muse CC",
         "type": "Site Internet",
         "tags": [
@@ -34,7 +39,10 @@
             "title": "Test Link",
             "url": "#"
         },
-        "thumbnail": "http://elise-jaspard.fr/api/images/thumbnails/cdesl.jpg",
+        "thumbnail": {
+            "normal": "http://elise-jaspard.fr/api/images/thumbnails/cdesl.jpg",
+            "retina": "http://elise-jaspard.fr/api/images/thumbnails/cdesl.jpg"
+        },
         "images": [
             "http://elise-jaspard.fr/projects/visuels/projects/cdesl/1.jpg",
             "http://elise-jaspard.fr/projects/visuels/projects/cdesl/2.jpg",
@@ -44,17 +52,21 @@
     {
         "id": "3",
         "title": "La Rampe",
+        "category": "Print",
         "company": "CNOSSOS",
         "type": "Brochure de 24 pages",
         "tags": [
             "Composition - Graphisme"
         ],
-        "description": "La Rampe est une salle de spectacle qui a souhaité une refonte complète de sa brochure de saisons. À l'aide de nouvelles propositions graphique, j'ai essayé d'apporter une nouvelle dynamique à ce support.",
+        "description": "La Rampe est une salle de spectacle qui a souhaité une refonte complète de sa brochure de saison. À l'aide de nouvelles propositions graphiques, j'ai essayé d'apporter une nouvelle dynamique à ce support.",
         "link": {
             "title": "",
             "url": ""
         },
-        "thumbnail": "http://elise-jaspard.fr/api/images/thumbnails/la-rampe1.jpg",
+        "thumbnail": {
+            "normal": "http://elise-jaspard.fr/api/images/thumbnails/la-rampe.jpg",
+            "retina": "http://elise-jaspard.fr/api/images/thumbnails/la-rampe@2x.jpg"
+        },
         "images": [
             "http://elise-jaspard.fr/projects/visuels/projects/rampe/brochure/1.jpg",
             "http://elise-jaspard.fr/projects/visuels/projects/rampe/brochure/2.jpg",
@@ -64,17 +76,21 @@
     {
         "id": "4",
         "title": "Les 4 saisons",
+        "category": "Print",
         "company": "CNOSSOS",
         "type": "Magazine de 96 pages",
         "tags": [
             "Direction de projet - Réalisation"
         ],
-        "description": "Les 4 saisons est un magazine bimestriel produit par les éditions Terre vivantes. Il a été conçu à partir d'une grille flexible pour plus d’adaptation et une meilleur mise en valeur des visuels. Tirage : 50 000 ex.",
+        "description": "Les 4 saisons est un magazine bimestriel produit par les éditions Terre Vivante. Il a été conçu à partir d'une grille flexible pour plus d’adaptation et une meilleure mise en valeur des visuels. Tirage : 50 000 ex.",
         "link": {
             "title": "",
             "url": ""
         },
-        "thumbnail": "http://elise-jaspard.fr/api/images/thumbnails/4saisons.jpg",
+        "thumbnail": {
+            "normal": "http://elise-jaspard.fr/api/images/thumbnails/quatre-saisons.jpg",
+            "retina": "http://elise-jaspard.fr/api/images/thumbnails/quatre-saisons@2x.jpg"
+        },
         "images": [
             "http://elise-jaspard.fr/projects/visuels/projects/4saisons/1.jpg",
             "http://elise-jaspard.fr/projects/visuels/projects/4saisons/2.jpg",
@@ -84,17 +100,21 @@
     {
         "id": "5",
         "title": "Web Apps",
+        "category": "Application mobile",
         "company": "Unitag",
         "type": "Plateforme et outils marketing",
         "tags": [
             "Concept - Ergonomie - Graphisme"
         ],
-        "description": "Les Wep Apps correspondent à de mini site mobile, packager, qui ont pour but de réponde rapidement à diffèrents usages. Carte de visite - Jeux à gratter - Sondage - Téléchargement… J'ai conçu et designer une interface de gestion qui accompagne l'utilisateur lors de la création, ainsi que les diffèrents rendu sur smartphone en utilisant le principe de blocs générique.",
+        "description": "Les Wep Apps correspondent à de mini sites mobiles, packagés, qui ont pour but de réponde rapidement à différents usages. Cartes de visite - Jeux à gratter - Sondages - Téléchargements… J'ai conçu et designé une interface de gestion qui accompagne l'utilisateur lors de la création, ainsi que les différents rendus sur smartphone en utilisant le principe de blocs génériques.",
         "link": {
             "title": "",
             "url": ""
         },
-        "thumbnail": "http://elise-jaspard.fr/api/images/thumbnails/unitag-mobile.jpg",
+        "thumbnail": {
+            "normal": "http://elise-jaspard.fr/api/images/thumbnails/mobile-unitag.jpg",
+            "retina": "http://elise-jaspard.fr/api/images/thumbnails/mobile-unitag@2x.jpg"
+        },
         "images": [
           "http://elise-jaspard.fr/api/images/webapps-unitag-1.jpg",
           "http://elise-jaspard.fr/api/images/webapps-unitag-2.jpg",
@@ -103,19 +123,23 @@
     },
     {
         "id": "6",
-        "title": "Website",
+        "title": "Webdesign",
+        "category": "Webdesign",
         "company": "Unitag",
         "type": "Refonte de l'identité graphique",
         "tags": [
             "Conception",
             "Graphisme"
         ],
-        "description": "Avec pour objectif de rafraichir l'image globale de la marque, j'ai eu l'occasion d'effectuer une refonte complète du site. Dans la continuité, de nouvelles pages plus pédagogique on vue le jour, notament pour accompagner l'arriver de nouvelle technologies tel que le NFC.",
+        "description": "Avec pour objectif de rafraîchir l'image globale de la marque, j'ai eu l'occasion d'effectuer une refonte complète du site. Dans la continuité, de nouvelles pages plus pédagogiques ont vu le jour, notamment pour accompagner l'arrivée de nouvelles technologies telle que le NFC.",
         "link": {
             "title": "Visiter le site",
             "url": "#"
         },
-        "thumbnail": "http://elise-jaspard.fr/api/images/thumbnails/unitag-website.jpg",
+        "thumbnail": {
+            "normal": "http://elise-jaspard.fr/api/images/thumbnails/website-unitag.jpg",
+            "retina": "http://elise-jaspard.fr/api/images/thumbnails/website-unitag@2x.jpg"
+        },
         "images": [
             "http://elise-jaspard.fr/api/images/site-unitag-1.jpg",
             "http://elise-jaspard.fr/api/images/site-unitag-2.jpg",
