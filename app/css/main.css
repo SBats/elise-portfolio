@@ -84,16 +84,32 @@ html {
     }
 }
 
-.main-container {
-    padding: 1px;
-    background: #787361 url('../img/cycles-bg-v2.jpg') fixed center no-repeat;
-    background-size: cover;
-    background-position: 0 center;
+body {
+    background-color: #787361;
 }
 
-@media only screen and (min-width: 1600px) {
-    .main-container {
-        background-size: cover;
+#fixed-background {
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 130vh;
+    width: 100%;
+    background-color: #787361;
+    background-image: url('../img/cycles-bg-v2.jpg');
+    background-repeat: no-repeat;
+    background-position: center 0;
+}
+
+@media only screen and (min-device-height: 1079px) {
+    #fixed-background {
+        background-size: auto 130%;
+    }
+}
+
+@media only screen and (max-width: 920px) {
+    #fixed-background {
+        background-size: auto 220vw;
     }
 }
 
@@ -153,9 +169,9 @@ hr {
 /* HEADER */
 
 header {
+    padding-top: 4rem;
     text-align: center;
     color: white;
-    margin-top: 4rem;
 }
 
 header::after {
@@ -718,6 +734,11 @@ section::after {
     color: #db5848;
 }
 
+#experiences .more {
+  font-size: 0.9rem;
+  color: #db5848;
+  font-weight: 700;
+}
 
 /* FOOTER */
 

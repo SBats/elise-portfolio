@@ -207,24 +207,22 @@
     function computeBackgroundOffset (scrollPosition, element) {
         element.style.backgroundPositionY = '-' + scrollPosition / 40 + 'px';
     }
-
-    function updateProjectViwerTopOffset (scrollPosition, element) {
-        element.style.top = scrollPosition + 'px';
-    }
     
     function scrollEvent() {
         var scrollPosition = document.querySelector('body').scrollTop;
         computeBackgroundOffset(scrollPosition, backgroundElement);
-        // updateProjectViwerTopOffset(scrollPosition, projectViewer);
     }
 
     function mainController () {
-        backgroundElement = document.querySelector('.main-container');
+        var backgroundMediaQuery = window.matchMedia( "(min-width: 1200px)" );
+        backgroundElement = document.querySelector('#fixed-background');
         projectViewer = document.querySelector('#projects-viewer');
         projectsCloseButton = document.querySelector('#projects-viewer .project-back');
         pageContainer = document.querySelector('body');
 
-        window.addEventListener("scroll", scrollEvent);
+        if (backgroundMediaQuery.matches) {
+            window.addEventListener("scroll", scrollEvent);
+        }
         
         getProjects();
     }
