@@ -44,9 +44,9 @@
             "retina": "http://elise-jaspard.fr/api/images/thumbnails/cdesl.jpg"
         },
         "images": [
-            "http://elise-jaspard.fr/projects/visuels/projects/cdesl/1.jpg",
-            "http://elise-jaspard.fr/projects/visuels/projects/cdesl/2.jpg",
-            "http://elise-jaspard.fr/projects/visuels/projects/cdesl/3.jpg"
+            "http://elise-jaspard.fr/v2/projects/visuels/projects/cdesl/1.jpg",
+            "http://elise-jaspard.fr/v2/projects/visuels/projects/cdesl/2.jpg",
+            "http://elise-jaspard.fr/v2/projects/visuels/projects/cdesl/3.jpg"
         ]
     },
     {
@@ -68,9 +68,9 @@
             "retina": "http://elise-jaspard.fr/api/images/thumbnails/la-rampe@2x.jpg"
         },
         "images": [
-            "http://elise-jaspard.fr/projects/visuels/projects/rampe/brochure/1.jpg",
-            "http://elise-jaspard.fr/projects/visuels/projects/rampe/brochure/2.jpg",
-            "http://elise-jaspard.fr/projects/visuels/projects/rampe/brochure/3.jpg"
+            "http://elise-jaspard.fr/v2/projects/visuels/projects/rampe/brochure/1.jpg",
+            "http://elise-jaspard.fr/v2/projects/visuels/projects/rampe/brochure/2.jpg",
+            "http://elise-jaspard.fr/v2/projects/visuels/projects/rampe/brochure/3.jpg"
         ]
     },
     {
@@ -92,14 +92,14 @@
             "retina": "http://elise-jaspard.fr/api/images/thumbnails/quatre-saisons@2x.jpg"
         },
         "images": [
-            "http://elise-jaspard.fr/projects/visuels/projects/4saisons/1.jpg",
-            "http://elise-jaspard.fr/projects/visuels/projects/4saisons/2.jpg",
-            "http://elise-jaspard.fr/projects/visuels/projects/4saisons/3.jpg"
+            "http://elise-jaspard.fr/v2/projects/visuels/projects/4saisons/1.jpg",
+            "http://elise-jaspard.fr/v2/projects/visuels/projects/4saisons/2.jpg",
+            "http://elise-jaspard.fr/v2/projects/visuels/projects/4saisons/3.jpg"
         ]
     },
     {
         "id": "5",
-        "title": "Web Apps",
+        "title": "Les Web Apps",
         "category": "Application mobile",
         "company": "Unitag",
         "type": "Plateforme et outils marketing",
@@ -123,7 +123,7 @@
     },
     {
         "id": "6",
-        "title": "Webdesign",
+        "title": "Website Unitag",
         "category": "Webdesign",
         "company": "Unitag",
         "type": "Refonte de l'identité graphique",
