@@ -981,6 +981,24 @@ footer {
     position: relative;
 }
 
+#projects-viewer .project-images-list li:first-child::before {
+    content: url('../img/down.svg');
+    position: absolute;
+    width: 50px;height: 50px;
+    background: #f4f4f4;
+    z-index: 2;
+    left: 50%;
+    top: 120%;
+    margin-left: -25px;
+    animation: bouncyLoop 1.5s ease-in-out infinite;
+}
+
+@keyframes bouncyLoop {
+     from { margin-top: 0px; }
+     50%  { margin-top: 18px; }
+     to   { margin-top: 0px; }
+}
+
 #projects-viewer .project-images-list li:not(:last-child) {
     margin-bottom: 30vh;
 }

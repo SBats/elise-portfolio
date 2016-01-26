@@ -26,27 +26,25 @@
     },
     {
         "id": "2",
-        "title": "CDESL",
+        "title": "Concepts",
         "category": "Webdesign",
-        "company": "Muse CC",
-        "type": "Site Internet",
+        "company": "Unitag",
+        "type": "Interface",
         "tags": [
-            "Archi. de l'information",
-            "Graphisme"
+            "Ergonomie"
         ],
-        "description": "Conception, réalisation et découpage l’ensemble des maquettes qui ont été utiliser pour la mise en ligne du site. Conception, réalisation et découpage l’ensemble des maquettes qui ont été utiliser pour la mise en ligne du site. Conception, réalisation et découpage l’ensemble des maquettes qui ont été utiliser pour la mise en ligne du site.",
+        "description": "Ajouter des animations sur un zoning ou une maquette, c'est fun, mais pas que ! Elles peuvent donner de la vie et du relief mais elles facilitent également l'échange et la compréhension au sein d'une équipe.",
         "link": {
-            "title": "Test Link",
-            "url": "#"
+            "title": "Voir plus",
+            "url": "https://dribbble.com/elisejaspard"
         },
         "thumbnail": {
-            "normal": "http://elise-jaspard.fr/api/images/thumbnails/cdesl.jpg",
-            "retina": "http://elise-jaspard.fr/api/images/thumbnails/cdesl.jpg"
+            "normal": "http://elise-jaspard.fr/api/images/thumbnails/projet-unitag.jpg",
+            "retina": "http://elise-jaspard.fr/api/images/thumbnails/projet-unitag@2x.jpg"
         },
         "images": [
-            "http://elise-jaspard.fr/v2/projects/visuels/projects/cdesl/1.jpg",
-            "http://elise-jaspard.fr/v2/projects/visuels/projects/cdesl/2.jpg",
-            "http://elise-jaspard.fr/v2/projects/visuels/projects/cdesl/3.jpg"
+            "http://elise-jaspard.fr/api/images/projet-board-unitag.gif",
+            "http://elise-jaspard.fr/api/images/projet-front-unitag.gif"
         ]
     },
     {
@@ -134,7 +132,7 @@
         "description": "Avec pour objectif de rafraîchir l'image globale de la marque, j'ai eu l'occasion d'effectuer une refonte complète du site. Dans la continuité, de nouvelles pages plus pédagogiques ont vu le jour, notamment pour accompagner l'arrivée de nouvelles technologies telle que le NFC.",
         "link": {
             "title": "Visiter le site",
-            "url": "#"
+            "url": ""
         },
         "thumbnail": {
             "normal": "http://elise-jaspard.fr/api/images/thumbnails/website-unitag.jpg",
